@@ -2,7 +2,7 @@
 - 👀 I’m interested in technology digital photography cycling freedom
 - 🌱 I’m currently learning python 
 - 💞️ I’m looking to collaborate on Github
-- 📫 How to reach me You can send an email to my email address
+- 📫 How to reach me You can send an email to my email address 3403936801@qq.com
 
 <!---
 luojiahuang/luojiahuang is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
