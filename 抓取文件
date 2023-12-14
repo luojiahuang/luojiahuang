@@ -1,0 +1,26 @@
+要提取网页文件，你可以使用 Python 语言和它的几个库，如 requests 用于发送网络请求，BeautifulSoup 用于解析 HTML 内容。
+import requests
+from bs4 import BeautifulSoup
+
+# 目标网页的 URL
+url = 'https://example.com'
+
+# 发送 GET 请求
+response = requests.get(url)
+
+# 确保请求成功
+if response.status_code == 200:
+    # 使用 BeautifulSoup 解析 HTML 内容
+    soup = BeautifulSoup(response.text, 'html.parser')
+    
+    # 提取所需的数据，例如所有的段落
+    paragraphs = soup.find_all('p')
+    for p in paragraphs:
+        print(p.text)
+else:
+    print(f"Error: Unable to fetch webpage. Status code: {response.status_code}")
+确保你安装了 requests 和 beautifulsoup4：
+
+sh
+pip install requests beautifulsoup4
+请替换 url 变量中的 'https://example.com' 为你想要提取文件的网页地址，并根据需要修改 soup.find_all('p') 中的 'p' 标签来提取网页中你想要的元素。
